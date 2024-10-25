@@ -56,7 +56,7 @@ body {
 
 .company-name h2 {
     font-size: 1.5rem; /* Slightly smaller size for "Enterprises" */
-    color: #0070f3; /* Blue color for Enterprises */
+    color: #333; /* Blue color for Enterprises */
     margin-left: 38px; /* Align "E" of Enterprises with "e" of Kienosis */
     transform: translateY(10%); /* Slightly lift Enterprises */
 }
