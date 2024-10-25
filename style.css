@@ -58,7 +58,7 @@ body {
     font-size: 1.5rem; /* Slightly smaller size for "Enterprises" */
     color: #333; /* Blue color for Enterprises */
     margin-left: 38px; /* Align "E" of Enterprises with "e" of Kienosis */
-    transform: translateY(10%); /* Slightly lift Enterprises */
+    transform: translateY(8%); /* Slightly lift Enterprises */
 }
 
 /* Navigation */
