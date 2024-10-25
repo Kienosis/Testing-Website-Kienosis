@@ -9,14 +9,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Header Section */
+/* Header Section with Gradient */
 .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    padding: 0.5rem 2rem; /* Smaller padding for a more compact header */
-    border-bottom: 1px solid #ddd;
+    background: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 70%, #ddd 100%);
+    padding: 0.5rem 2rem; /* Smaller padding for compact header */
+    border-bottom: 1px solid #ccc;
 }
 
 .logo-and-nav {
@@ -25,21 +25,39 @@ body {
 }
 
 .logo {
-    width: 30px; /* Smaller logo */
+    width: 30px; /* Adjust logo size */
     height: 30px;
     margin-right: 1rem;
 }
 
-.top-header h1 {
-    font-size: 1.2rem; /* Smaller font size for the company name */
+/* Stylized Company Name */
+.company-name h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
     color: #333;
-    margin-right: 2rem;
+    display: flex;
+    align-items: center;
 }
 
+.company-name h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-left: 1rem;
+}
+
+.k-letter {
+    font-size: 2.2rem;
+    color: #0070f3; /* Make the 'K' stand out */
+    margin-right: 0.3rem;
+}
+
+/* Navigation */
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 2rem; /* More space between navigation items */
+    gap: 2rem;
+    margin-left: 2rem;
 }
 
 nav ul li {
@@ -48,8 +66,17 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #0070f3;
-    font-weight: 600; /* Bold, modern look */
+    color: grey; /* Default grey color */
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Active and Hover Styles */
+nav ul li a.active,
+nav ul li a:hover {
+    color: #0070f3; /* Blue color on active or hover */
+    border-bottom: 2px solid #0070f3; /* Cool blue underline */
 }
 
 .contact-info {
