@@ -10,13 +10,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Centering container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 /* Header Section */
 .top-header {
     display: flex;
@@ -75,24 +68,18 @@ nav ul li a.active {
     border-bottom: 3px solid #0070f3;
 }
 
-/* Hero Section with Left and Right Content */
+/* Hero Section reverted to default */
 #hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    padding: 6rem 1rem;
     background: url('https://share-eric.eu/fileadmin/_processed_/b/5/csm_dataheader_ec9ee966be.jpg') no-repeat center center;
     background-size: cover;
     color: white;
-    padding: 6rem 1rem;
 }
 
-.hero-left {
-    max-width: 50%;
-}
-
-.hero-right {
-    max-width: 45%;
-    text-align: right;
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .cta-button {
@@ -111,23 +98,24 @@ nav ul li a.active {
     background-color: rgba(255, 255, 255, 1);
 }
 
-/* Call to Action Section */
-#cta {
-    text-align: center;
+/* Services Section Reverted */
+#services {
     padding: 3rem 1rem;
-    background-color: #0070f3;
-    color: white;
+    text-align: center;
+}
+
+.services-grid {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
 }
 
-#cta h2 {
-    margin-bottom: 1rem;
-}
-
-#cta a.cta-button {
-    margin-top: 1rem;
+.service-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Centering Fix */
