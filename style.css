@@ -7,120 +7,61 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Hero Section */
-.hero {
-    background-color: #0070f3;
-    color: #fff;
-    text-align: center;
-    padding: 3rem 1rem;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    margin-top: 0.5rem;
-}
-
-.cta-button {
+/* Header Section */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fff;
-    color: #0070f3;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    cursor: pointer;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-and-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.top-header h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
     font-size: 1rem;
 }
 
-.cta-button:hover {
-    background-color: #f1f1f1;
-}
-
-/* Features Section */
-.features-section {
-    padding: 2rem 1rem;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.features-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.feature-item {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Pricing Section */
-.pricing-section {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.pricing-table {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.plan {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
-    width: 150px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.plan-button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #0070f3;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.plan-button:hover {
-    background-color: #005bb5;
-}
-
-/* Footer */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-.footer nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
-}
-
-.footer nav ul li a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
+    color: #0070f3;
+    font-weight: bold;
+}
+
+.contact-info {
     font-size: 0.875rem;
+    color: #333;
+}
+
+.contact-info a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
