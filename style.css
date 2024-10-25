@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Reset to remove browser defaults */
 * {
     margin: 0;
     padding: 0;
@@ -7,17 +7,17 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light background for a clean layout */
 }
 
-/* Centering the Content */
+/* Centering container for consistent alignment */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header Section with Gradient */
+/* Header Section with a subtle gradient background */
 .top-header {
     display: flex;
     justify-content: space-between;
@@ -25,6 +25,71 @@ body {
     background: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 70%, #ddd 100%);
     padding: 0.5rem 2rem;
     border-bottom: 1px solid #ccc;
+}
+
+/* Styling for the logo */
+.logo {
+    width: 40px; /* Adjust width of the logo */
+    height: auto; /* Keep the aspect ratio intact */
+    margin-right: 1rem;
+}
+
+/* Stylized company name for 'Kienosis Enterprises' */
+.company-name {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack Kienosis on top of Enterprises */
+}
+
+.company-name h1 {
+    font-size: 1.5rem; /* Size adjustment for 'Kienosis' */
+    font-weight: 600;
+    color: #333; /* Main text color */
+}
+
+.company-name h2 {
+    font-size: 1.5rem; /* Matching size for 'Enterprises' */
+    color: #0070f3; /* Blue color for 'Enterprises' */
+    margin-left: 38px; /* Align 'Enterprises' with the "e" of Kienosis */
+    transform: translateY(10%); /* Lift Enterprises slightly */
+}
+
+/* Navigation section */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+    gap: 2rem; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Highlight active and hovered links */
+nav ul li a.active,
+nav ul li a:hover {
+    color: #0070f3; /* Blue on hover and active */
+    border-bottom: 2px solid #0070f3; /* Underline effect */
+}
+
+/* Contact Info Styling */
+.contact-info {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.contact-info a {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 /* Hero Section */
@@ -35,24 +100,23 @@ body {
     background-color: #0070f3;
     color: white;
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 4rem 1rem; /* Add padding for spacing */
 }
 
+/* Hero section content layout */
 .hero-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero-text {
-    max-width: 50%;
+    max-width: 50%; /* Ensures text takes only half the width */
 }
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-}
-
+/* CTA Button styling */
 .cta-button {
     background-color: #ffffff;
     color: #0070f3;
@@ -69,7 +133,7 @@ body {
 
 /* Services Section */
 #services {
-    padding: 3rem 1rem;
+    padding: 3rem 1rem; /* Spacing around the services */
     text-align: center;
     background-color: #fff;
 }
@@ -85,7 +149,7 @@ body {
     padding: 1.5rem;
     border-radius: 8px;
     width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card effect */
 }
 
 /* Call to Action Section */
