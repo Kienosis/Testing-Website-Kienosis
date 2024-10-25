@@ -1,4 +1,4 @@
-/* General Reset to remove browser defaults */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,17 +7,17 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4; /* Light background for a clean layout */
+    background-color: #f4f4f4;
 }
 
-/* Centering container for consistent alignment */
+/* Centering container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header Section with a subtle gradient background */
+/* Header Section */
 .top-header {
     display: flex;
     justify-content: space-between;
@@ -27,38 +27,37 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-/* Styling for the logo */
+/* Logo Size Adjustment */
 .logo {
-    width: 40px; /* Adjust width of the logo */
-    height: auto; /* Keep the aspect ratio intact */
+    width: 40px;
+    height: auto;
     margin-right: 1rem;
 }
 
-/* Stylized company name for 'Kienosis Enterprises' */
+/* Stylized company name */
 .company-name {
-    position: relative;
     display: flex;
-    flex-direction: column; /* Stack Kienosis on top of Enterprises */
+    flex-direction: column;
 }
 
 .company-name h1 {
-    font-size: 1.5rem; /* Size adjustment for 'Kienosis' */
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #333; /* Main text color */
+    color: #333;
 }
 
 .company-name h2 {
-    font-size: 1.5rem; /* Matching size for 'Enterprises' */
-    color: #0070f3; /* Blue color for 'Enterprises' */
-    margin-left: 38px; /* Align 'Enterprises' with the "e" of Kienosis */
-    transform: translateY(10%); /* Lift Enterprises slightly */
+    font-size: 1.5rem;
+    color: #0070f3;
+    margin-left: 38px;
+    transform: translateY(10%);
 }
 
-/* Navigation section */
+/* Navigation styling */
 nav ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;
     display: flex;
-    gap: 2rem; /* Space between links */
+    gap: 2rem;
 }
 
 nav ul li a {
@@ -69,14 +68,12 @@ nav ul li a {
     transition: color 0.3s, border-bottom 0.3s;
 }
 
-/* Highlight active and hovered links */
 nav ul li a.active,
 nav ul li a:hover {
-    color: #0070f3; /* Blue on hover and active */
-    border-bottom: 2px solid #0070f3; /* Underline effect */
+    color: #0070f3;
+    border-bottom: 2px solid #0070f3;
 }
 
-/* Contact Info Styling */
 .contact-info {
     font-size: 0.875rem;
     color: #333;
@@ -92,48 +89,50 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
+/* Hero Section with Background Image */
 #hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0070f3;
+    background: url('https://share-eric.eu/fileadmin/_processed_/b/5/csm_dataheader_ec9ee966be.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
     text-align: center;
-    padding: 4rem 1rem; /* Add padding for spacing */
+    padding: 6rem 1rem;
 }
 
-/* Hero section content layout */
 .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    text-align: left;
+    width: 100%;
 }
 
 .hero-text {
-    max-width: 50%; /* Ensures text takes only half the width */
+    max-width: 50%;
 }
 
-/* CTA Button styling */
 .cta-button {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent button */
     color: #0070f3;
-    padding: 0.75rem 2rem;
+    padding: 1rem 2.5rem; /* Increased padding for spacing */
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
+    margin-top: 1rem; /* Space above the button */
 }
 
 .cta-button:hover {
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Services Section */
 #services {
-    padding: 3rem 1rem; /* Spacing around the services */
+    padding: 3rem 1rem;
     text-align: center;
     background-color: #fff;
 }
@@ -149,15 +148,7 @@ nav ul li a:hover {
     padding: 1.5rem;
     border-radius: 8px;
     width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card effect */
-}
-
-/* Call to Action Section */
-#cta {
-    text-align: center;
-    padding: 3rem 1rem;
-    background-color: #0070f3;
-    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Section */
