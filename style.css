@@ -10,6 +10,13 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Centering container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Header Section */
 .top-header {
     display: flex;
@@ -20,7 +27,7 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-/* Logo Size and Position */
+/* Logo size and header text */
 .logo {
     width: 40px;
     height: auto;
@@ -30,58 +37,73 @@ body {
 .company-name {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #0070f3; /* Single color for the company name */
+    color: #0070f3;
     line-height: 1.2;
 }
 
-/* Navigation */
+/* Navigation Links as Bubbles */
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 2rem;
 }
 
+nav ul li {
+    position: relative;
+}
+
 nav ul li a {
     text-decoration: none;
     color: grey;
     font-weight: 600;
-    padding-bottom: 0.2rem;
-    transition: color 0.3s, border-bottom 0.3s;
+    padding: 0.5rem 1rem;
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
 }
 
-nav ul li a.active,
+/* Hover effects for navigation bubbles */
 nav ul li a:hover {
-    color: #0070f3;
-    border-bottom: 2px solid #0070f3;
+    transform: scale(1.1);
+    background-color: #0070f3;
+    color: white;
 }
 
-/* Hero Section */
+nav ul li a.active {
+    background-color: rgba(0, 112, 243, 0.1);
+    border-bottom: 3px solid #0070f3;
+}
+
+/* Hero Section with Left and Right Content */
 #hero {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     background: url('https://share-eric.eu/fileadmin/_processed_/b/5/csm_dataheader_ec9ee966be.jpg') no-repeat center center;
     background-size: cover;
     color: white;
-    text-align: center;
     padding: 6rem 1rem;
-    position: relative;
 }
 
-.hero-text {
-    max-width: 600px;
-    margin: 0 auto;
+.hero-left {
+    max-width: 50%;
+}
+
+.hero-right {
+    max-width: 45%;
+    text-align: right;
 }
 
 .cta-button {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent button */
+    background-color: rgba(255, 255, 255, 0.8);
     color: #0070f3;
     padding: 1rem 2.5rem;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
     text-decoration: none;
-    margin-top: 2rem; /* Add spacing from text */
+    margin-top: 2rem;
     transition: background-color 0.3s ease;
 }
 
@@ -108,41 +130,27 @@ nav ul li a:hover {
     margin-top: 1rem;
 }
 
-/* Fix button overlapping text */
-.cta-button {
-    padding: 1rem 2rem;
-    margin-top: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-}
-
-/* Services Section - Bubble structure */
-#services {
-    padding: 3rem 1rem;
+/* Footer Centering Fix */
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 2rem 1rem;
 }
 
-.services-grid {
+footer nav ul {
+    list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-.service-item {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
-.service-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    border-bottom: 3px solid #0070f3;
-}
-
-.service-item:active {
-    background-color: rgba(0, 112, 243, 0.1);
+footer nav ul li a:hover {
+    text-decoration: underline;
 }
