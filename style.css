@@ -15,7 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 70%, #ddd 100%);
-    padding: 0.5rem 2rem; /* Smaller padding for compact header */
+    padding: 0.5rem 2rem;
     border-bottom: 1px solid #ccc;
 }
 
@@ -25,14 +25,16 @@ body {
 }
 
 .logo {
-    width: 40px; /* Adjust logo size */
-    height: auto; /* Keep aspect ratio */
+    width: 40px;
+    height: auto; /* Maintain aspect ratio */
     margin-right: 1rem;
 }
 
 /* Stylized Company Name */
 .company-name {
     position: relative;
+    display: flex;
+    align-items: flex-start; /* Align top of the K and dot of i */
 }
 
 .company-name h1 {
@@ -40,24 +42,23 @@ body {
     margin: 0;
     font-weight: 600;
     color: #333;
-    position: relative;
-    left: -10px; /* Slightly shift Kienosis to the left */
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+/* Adjust size and spacing for "K" */
+.k-letter {
+    font-size: 2rem; /* Reduce size for better alignment */
+    color: #0070f3;
+    margin-right: -5px; /* Tighten the space between the K and "ienosis" */
 }
 
 .company-name h2 {
-    font-size: 1.2rem;
-    color: #0070f3; /* Blue color for Holding */
-    position: absolute;
-    bottom: 0;
-    left: 36px; /* Adjust to overlap Holding with the 'K' */
-    transform: translateY(15%); /* Slightly bring Holding above */
-}
-
-/* Larger 'K' in Kienosis */
-.k-letter {
-    font-size: 2.4rem; /* Larger K */
-    color: #0070f3;
-    margin-right: 0.3rem;
+    font-size: 1.8rem; /* Make "Enterprises" match "ienosis" */
+    color: #0070f3; /* Blue color for Enterprises */
+    margin-left: 5px; /* Adjust spacing */
+    transform: translateY(15%); /* Align slightly upwards */
 }
 
 /* Navigation */
@@ -74,7 +75,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: grey; /* Default grey color */
+    color: grey;
     font-weight: 600;
     padding-bottom: 0.2rem;
     transition: color 0.3s, border-bottom 0.3s;
@@ -83,5 +84,21 @@ nav ul li a {
 /* Active and Hover Styles */
 nav ul li a.active,
 nav ul li a:hover {
-    color: #0070f3; /* Blue color on active or hover */
-    border-bottom: 2px solid #
+    color: #0070f3;
+    border-bottom: 2px solid #0070f3;
+}
+
+.contact-info {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.contact-info a {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
