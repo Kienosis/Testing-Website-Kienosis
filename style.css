@@ -7,6 +7,14 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Centering the Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Header Section with Gradient */
@@ -19,86 +27,96 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-.logo-and-nav {
+/* Hero Section */
+#hero {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #0070f3;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
 }
 
-.logo {
-    width: 40px;
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 1rem;
-}
-
-/* Stylized Company Name */
-.company-name {
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Stacks Kienosis on top of Enterprises */
-}
-
-.company-name h1 {
-    font-size: 1.5rem; /* Slightly reduced size for "ienosis" */
-    margin: 0;
-    font-weight: 600;
-    color: #333;
+.hero-content {
     display: flex;
     align-items: center;
-    line-height: 1;
+    justify-content: space-between;
 }
 
-/* Adjust size and spacing for "K" */
-.k-letter {
-    font-size: 2rem; /* Larger K */
-    color: #333; /* Same color as the rest of the word */
-    margin-right: 0.2rem; /* Slightly increase spacing between K and "ienosis" */
+.hero-text {
+    max-width: 50%;
 }
 
-.company-name h2 {
-    font-size: 1.5rem; /* Slightly smaller size for "Enterprises" */
-    color: #333; /* Blue color for Enterprises */
-    margin-left: 38px; /* Align "E" of Enterprises with "e" of Kienosis */
-    transform: translateY(8%); /* Slightly lift Enterprises */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Navigation */
-nav ul {
+.cta-button {
+    background-color: #ffffff;
+    color: #0070f3;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Services Section */
+#services {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action Section */
+#cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #0070f3;
+    color: white;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer nav ul {
     list-style-type: none;
     display: flex;
-    gap: 2rem;
-    margin-left: 2rem;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-nav ul li {
-    font-size: 1rem;
-}
-
-nav ul li a {
+footer nav ul li a {
+    color: white;
     text-decoration: none;
-    color: grey;
-    font-weight: 600;
-    padding-bottom: 0.2rem;
-    transition: color 0.3s, border-bottom 0.3s;
+    font-size: 0.9rem;
 }
 
-/* Active and Hover Styles */
-nav ul li a.active,
-nav ul li a:hover {
-    color: #0070f3;
-    border-bottom: 2px solid #0070f3;
-}
-
-.contact-info {
-    font-size: 0.875rem;
-    color: #333;
-}
-
-.contact-info a {
-    color: #0070f3;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.contact-info a:hover {
+footer nav ul li a:hover {
     text-decoration: underline;
 }
