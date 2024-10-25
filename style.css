@@ -10,13 +10,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Centering container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 /* Header Section */
 .top-header {
     display: flex;
@@ -27,33 +20,21 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-/* Logo Size Adjustment */
+/* Logo Size and Position */
 .logo {
     width: 40px;
     height: auto;
     margin-right: 1rem;
 }
 
-/* Stylized company name */
 .company-name {
-    display: flex;
-    flex-direction: column;
-}
-
-.company-name h1 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
+    color: #0070f3; /* Single color for the company name */
+    line-height: 1.2;
 }
 
-.company-name h2 {
-    font-size: 1.5rem;
-    color: #0070f3;
-    margin-left: 38px;
-    transform: translateY(10%);
-}
-
-/* Navigation styling */
+/* Navigation */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -74,22 +55,7 @@ nav ul li a:hover {
     border-bottom: 2px solid #0070f3;
 }
 
-.contact-info {
-    font-size: 0.875rem;
-    color: #333;
-}
-
-.contact-info a {
-    color: #0070f3;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section with Background Image */
+/* Hero Section */
 #hero {
     display: flex;
     align-items: center;
@@ -99,42 +65,61 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     padding: 6rem 1rem;
-}
-
-.hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    width: 100%;
+    position: relative;
 }
 
 .hero-text {
-    max-width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .cta-button {
-    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent button */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent button */
     color: #0070f3;
-    padding: 1rem 2.5rem; /* Increased padding for spacing */
+    padding: 1rem 2.5rem;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
     text-decoration: none;
-    margin-top: 1rem; /* Space above the button */
+    margin-top: 2rem; /* Add spacing from text */
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
 }
 
-/* Services Section */
+/* Call to Action Section */
+#cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #0070f3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cta h2 {
+    margin-bottom: 1rem;
+}
+
+#cta a.cta-button {
+    margin-top: 1rem;
+}
+
+/* Fix button overlapping text */
+.cta-button {
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+/* Services Section - Bubble structure */
 #services {
     padding: 3rem 1rem;
     text-align: center;
-    background-color: #fff;
 }
 
 .services-grid {
@@ -149,29 +134,15 @@ nav ul li a:hover {
     border-radius: 8px;
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Footer Section */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid #0070f3;
 }
 
-footer nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-footer nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-footer nav ul li a:hover {
-    text-decoration: underline;
+.service-item:active {
+    background-color: rgba(0, 112, 243, 0.1);
 }
