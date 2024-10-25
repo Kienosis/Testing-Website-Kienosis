@@ -31,24 +31,32 @@ body {
 }
 
 /* Stylized Company Name */
+.company-name {
+    position: relative;
+}
+
 .company-name h1 {
     font-size: 1.8rem;
     margin: 0;
     font-weight: 600;
     color: #333;
-    display: flex;
-    align-items: center;
+    position: relative;
+    left: -10px; /* Slightly shift Kienosis to the left */
 }
 
 .company-name h2 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-left: 1rem;
+    font-size: 1.1rem;
+    color: #0070f3; /* Blue color for Holding */
+    position: absolute;
+    bottom: 0;
+    left: 36px; /* Adjust to overlap Holding with the 'K' */
+    transform: translateY(15%); /* Slightly bring Holding above */
 }
 
+/* Larger 'K' in Kienosis */
 .k-letter {
-    font-size: 2.2rem;
-    color: #0070f3; /* Make the 'K' stand out */
+    font-size: 2.4rem; /* Larger K */
+    color: #0070f3;
     margin-right: 0.3rem;
 }
 
