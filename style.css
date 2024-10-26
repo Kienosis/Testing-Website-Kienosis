@@ -9,6 +9,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+	min-width: 1024px; /* Force a desktop-like layout on smaller screens */
+    overflow-x: auto; /* Allows horizontal scrolling if the screen is smaller */
 }
 
 /* Header */
