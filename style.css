@@ -71,7 +71,7 @@ nav ul li a:hover::after, nav ul li a.active::after {
 }
 
 /* Button Styles */
-button, .cta-button, .try-free-btn, .nav-buttons .try-free {
+button, .cta-button, .nav-buttons {
     background-color: #0070f3;
     color: white;
     padding: 0.75rem 1.5rem;
