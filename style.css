@@ -95,12 +95,22 @@ button:hover, .cta-button:hover, .try-free-btn:hover, .nav-buttons .try-free:hov
 #hero {
     display: flex;
     justify-content: space-between;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 0;
     background-color: #f9f9f9;
 }
 
 .hero-right {
-    max-width: 50%; /* Keep the left hero section width */
+    width: 40%; /* Adjust width as needed */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: -95px; /* Adjust this value to align with the hero section border */
+}
+
+.hero-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .hero-right h1 {
@@ -154,6 +164,7 @@ button:hover, .cta-button:hover, .try-free-btn:hover, .nav-buttons .try-free:hov
 /* Pricing Section */
 .pricing-block {
     display: flex;
+	margin-top: 0;
     justify-content: center;
     padding: 4rem 2rem;
     background-color: white;
@@ -232,3 +243,69 @@ button:hover, .cta-button:hover, .try-free-btn:hover, .nav-buttons .try-free:hov
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transform: rotate(10deg);
 }
+/* Hero Section for Services */
+#hero {
+	display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    align-items: center;
+}
+
+.hero-left {
+    width: 50%; /* Adjusts left side width */
+}
+
+.hero-right {
+    width: 40%; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-right img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: bottom; /* Align the bottom of the image */
+}
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Services Section */
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.service-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 45%;
+    margin: 1rem;
+    text-align: center;
+}
+
+.service-item h2 {
+    font-size: 1.5rem;
+    color: #0070f3;
+    margin-bottom: 0.5rem;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
