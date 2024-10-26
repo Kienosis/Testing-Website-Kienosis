@@ -309,3 +309,39 @@ button:hover, .cta-button:hover, .try-free-btn:hover, .nav-buttons .try-free:hov
     color: #666;
 }
 
+/* Mobile Styles for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust Hero Section */
+    #hero {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Stack Navigation Links */
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Reduce Button Sizes */
+    .cta-button, .try-free-btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-left, .hero-right {
+        width: 48%;
+    }
+}
